@@ -1,26 +1,9 @@
-﻿@model StudentsIndexViewModel
-
-
+﻿
 <div class="row">
-    <div class="col col-lg-6 mx-auto">
-        <table class="table table-hover table-responsive-lg">
-            <thead>
-                <tr>
-                    <th>Student</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach(var student in Model.Students)
-                { 
-                    <tr>
-                        <td>@student.Text</td>
-                        <td><a href="/students/details/@student.Id" 
-                               class="btn btn-outline-info">Details</a></td>
-                    </tr>
-                }
-            </tbody>
-        </table>
+    <div class="col col-lg-5 mx-auto">
+        <div class="alert alert-primary" role="alert">
+            @ViewBag.Welcome
+        </div>
     </div>
 </div>
 
